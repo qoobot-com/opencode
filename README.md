@@ -1,0 +1,2 @@
+# opencode
+low-code platform

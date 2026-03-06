@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>com.bltu.plugin</id>
+    <name>Bltu Studio</name>
+    <vendor email="support@bltu.net" url="http://www.bltu.net">Bltu</vendor>
+
+    <description><![CDATA[柏拉图开发插件平台]]></description>
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <group id="BltuStudio" text="_代码助手">
+            <add-to-group group-id="MainMenu" anchor="first"/>
+        </group>
+
+        <action id="CodeGenerationAction" class="com.bltu.plugins.generator.CodeGenerationAction" text="自动生成代码"
+                description="自动生成代码">
+            <add-to-group group-id="BltuStudio" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
